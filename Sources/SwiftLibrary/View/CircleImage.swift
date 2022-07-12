@@ -7,10 +7,13 @@ public struct CircleImage: View {
             .clipShape(Circle())
             .overlay(Circle().stroke(.gray, lineWidth: 4))
     }
+    public init(imageToSet: Image){
+        self.image = imageToSet
+    }
 }
 
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
-        CircleImage(image: Image("LordOfTheRingsTheReturnOfTheKing"))
+        CircleImage(imageToSet: Image("LordOfTheRingsTheReturnOfTheKing"))
     }
 }
