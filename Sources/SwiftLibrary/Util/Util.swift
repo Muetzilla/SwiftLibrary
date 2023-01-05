@@ -1,5 +1,6 @@
 import Foundation
 
+@available(macOS 10.15, *)
 public class Util:ObservableObject{
     public static func isPalidrome(number:Int) -> Bool{
         var tempRest = number
